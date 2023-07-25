@@ -18,6 +18,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/*
+Route::get('acesso-negado', function () {
+    return view('acesso-negado');
+});
+*/
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
